@@ -1,0 +1,192 @@
+body{
+    background-color: rgb(242, 240, 237);
+    padding: 4px;
+    
+}
+/* se establecen los estilos principales comunes  de letra, borde, color etc... para todos los apartados: encabezado, navegación contenido...
+ Así queda todo uniforme*/
+
+header, nav, main, aside, footer{
+                                background-color: rgb(185, 179, 179);
+                                border: solid;
+                                border-color: rgb(145, 136, 136);
+                                color: #fff;
+                                border-radius: 8px;
+                                padding: 2px;
+                                font-size: 1.5rem;
+}
+
+
+h1{
+    text-align: center;
+    
+    
+}
+h2{
+    color: black;
+}
+
+/* creo las características de la parte principal de la web, que va a ser el nav, main aside. Tamaño y posicionamiento*/
+#posicionamiento{
+                 display: flex;
+                 flex-direction: row;
+                 height: auto;
+
+                 
+
+}
+
+/* Estilos encabezado*/
+header{ 
+        background-color: rgb(137, 32, 32);
+        height: 13rem; ;
+        background-image: url('../img/gatocoser.webp'); 
+        background-repeat: no-repeat;
+}
+/* Establece colores específicos para cada letra en un h1 con la clase "cabecera" */
+
+
+
+
+
+
+/* Estilos para la navegación entre páginas y una clase para la imagen*/
+nav{
+   
+    text-align: center;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.imagen-nav{
+              
+    padding-top: 100px;
+    width: 290px;
+ 
+    
+}
+
+/*Estilos para la zona principal main, tamaño y clases para posicionar una parte del texto alrededor de la imagen y otra debajo*/
+main{
+     
+     flex-basis: 60%;
+      
+}
+
+
+.imagen-float{
+               width: 20rem;
+               float: left;
+              
+}
+
+.fin-float{
+           clear: both;
+}
+
+/*Clase para estilos del main de noticias.html */ 
+.espacio{   
+    padding: auto;
+    border: solid;
+    border-color: rgb(145, 136, 136);
+    margin-top: auto;
+    font-size:20px;
+    width: 100%;
+    font-weight: bold;
+}  
+/*clase para estilos del main de punto html */
+.espaciopunto{
+              
+              font-size:25px;
+              color: coral;
+
+}
+
+
+/*Estilos para el contenedor de imagenes con enlaces a las respectivas páginas de contacto. Contenedor, posicionamiento del titulo 
+y tamaño y posicionamiento de imagenes. Sin flex.*/
+
+aside{
+      flex-basis: 20%;
+
+}
+
+
+
+#contenedor-iconos{
+                    text-align: center;
+                   
+                  
+}
+
+.titulo-iconos{
+               text-decoration: underline;
+             
+              
+}
+.iconos-asi{
+            width: 100px;
+            height: auto;
+            margin: 10px;
+            
+
+}
+
+/*Estilos para el footer con imagen de fondo */
+
+footer{ 
+        
+        background-repeat: no-repeat;
+         
+        height: 20rem;
+}
+
+.imagen-footer{
+                float: left;
+                width: 30%;
+                height: 20rem;
+
+}
+
+
+article{
+        
+            display: inline-block; 
+            width: 45%; 
+            margin-top: 4rem; 
+}
+
+
+/* frase introducción formulario*/
+legend{
+    color: maroon;
+    text-decoration: underline;
+    
+}
+
+/*Estilos para cada una de las secciones del formulario de contacto*/
+  form {
+    width: 25rem;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0,5rem;
+  }
+
+  input, textarea {
+    width: 100%; padding:0,5rem;
+    margin-bottom:1rem;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: darksalmon;
+    color: white;
+    cursor: pointer;
+   height: 4rem;
+} 
